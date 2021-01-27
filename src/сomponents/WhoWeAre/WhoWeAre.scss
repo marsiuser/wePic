@@ -1,0 +1,28 @@
+.who {
+    .who-wrap {
+        padding: 143px 0px 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .who-info {
+            width: 33%;
+            margin-top: 35px;
+            // .who-info__more
+    
+            &__more {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 32px;
+                color: #627D98;
+                margin-top: 15px;
+            }
+    }
+    .who-image {
+        width: 63%;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    
+}

@@ -1,0 +1,88 @@
+.how {
+    margin-top: -100px;
+    .how-caption {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 52px;
+        color: #243B53;
+    }
+    .how-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-top: 33px;
+    }
+    .how-block__second{
+        padding: 30px 41px 0px 91px !important;
+        .how-block__img{
+            width: 57% ;
+            margin: -50px 0px 0px 0px;
+        }
+    }
+    .how-block__trird{
+        .info-how__top{
+            margin-top: 38px;
+        }
+        .how-block__img{
+            margin-top: -75px;
+            width: 34%;
+            margin-bottom: -35px;
+        }
+    }
+    .how-block {
+        background: #E6EBEF;
+        border-radius: 48px;
+        padding: 35px 96px 0px;  
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 65px;
+            // .how-block__info
+    
+            &__info {
+            }
+          
+    }
+    
+    .how-block__img{
+        width: 33%;
+        margin-right: 46px;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .info-how {
+            width: 45%;
+            // .info-how__addition
+
+            &__addition{
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 32px;
+                color: #627D98;
+                margin: 20px 0px 0px 46px;
+            }
+            // .info-how__top
+    
+            &__top {
+                display: flex;
+                align-items: flex-start;
+                margin-top: 55px;
+                p{
+                    font-weight: 900;
+                    font-size: 40px;
+                    line-height: 52px;
+                    color: #243B53;
+                    margin-right: 15px;
+                }
+                h4{
+                    margin-top: 5px;
+                    font-weight: 900;
+                    font-size: 32px;
+                    line-height: 42px;
+                    color: #627D98;
+                }
+            }
+            
+    }
+    
+}

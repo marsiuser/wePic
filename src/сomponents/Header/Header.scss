@@ -1,0 +1,56 @@
+.header {
+    .header-wrap{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0px;
+        .header-logo {
+
+            // .header-logo__text
+    
+                &__text {
+                    font-weight: 900;
+                    font-size: 24px;
+                    line-height: 31px;
+                    color: #ED5A5A;
+                    text-decoration: none;
+                }
+        }
+        .header-exit {
+                margin-top: 10px;
+                a{
+                    text-decoration: none;
+                    outline: none;
+                }
+                // .header-exit__login
+        
+                &__login {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #627D98;
+                    &:hover{
+                        color: #485766;
+                        transition: 0.3s;
+                    }
+                }
+        
+                // .header-exit__signup
+        
+                &__signup {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                    background: #ED5A5A;
+                    border-radius: 100px;
+                    padding: 14px 41px;
+                    margin-left: 36px;
+                    &:hover{
+                        background:#d44040;
+                        transition: all 0.3s;
+                    }
+                }
+        }
+        
+    }
+}

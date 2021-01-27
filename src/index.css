@@ -6,8 +6,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  max-width:75%;
+  margin: 0 auto;
+}
+.caption{
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 52px;
+  color: #243B53;
 }
