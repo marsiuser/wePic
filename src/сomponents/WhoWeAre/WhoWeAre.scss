@@ -3,10 +3,34 @@
         padding: 143px 0px 100px;
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width:1260px){
+            padding: 100px 0px 60px;
+            flex-direction: column;
+        }
+        @media screen and (max-width:500px){
+            padding-bottom: 20px;
+        }
+    }
+    .mobile-img{
+        display: none;
+        @media screen and (max-width:500px){
+            display: block;
+        }
+    }
+    .desktop-img{
+        @media screen and (max-width:500px){
+            display: none;
+        }
     }
     .who-info {
             width: 33%;
             margin-top: 35px;
+            @media screen and (max-width:1260px){
+                width: 100%;
+            }
+            @media screen and (max-width:500px){
+                margin-top: 5px;
+            }
             // .who-info__more
     
             &__more {
@@ -15,10 +39,18 @@
                 line-height: 32px;
                 color: #627D98;
                 margin-top: 15px;
+                @media screen and (max-width:500px){
+                    font-size: 16px;
+                    line-height: 25px;
+                }
             }
     }
     .who-image {
         width: 63%;
+        @media screen and (max-width:1260px){
+            width: 100%;
+            margin-top: 30px;
+        }
         img{
             width: 100%;
             object-fit: cover;

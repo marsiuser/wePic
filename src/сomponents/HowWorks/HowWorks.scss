@@ -1,10 +1,28 @@
 .how {
     margin-top: -100px;
+    @media screen and (max-width:1260px){
+        margin-top: 0px;
+    }
+    @media screen and (max-width:1100px){
+        margin-top: 50px;
+    }
+    @media screen and (max-width:500px){
+        margin-top: 100px;
+    }
     .how-caption {
         font-weight: 900;
         font-size: 40px;
         line-height: 52px;
         color: #243B53;
+        @media screen and (max-width:500px){
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+    .caption{
+        @media screen and (max-width:500px){
+            text-align: center;
+        }
     }
     .how-wrap {
         display: flex;
@@ -13,28 +31,76 @@
     }
     .how-block__second{
         padding: 30px 41px 0px 91px !important;
+        @media screen and (max-width:1260px){
+            padding: 20px 40px 40px !important;
+        }
+        @media screen and (max-width:500px){
+            padding: 7px 22px 40px !important;
+        }
+        .info-how__addition {
+            @media screen and (max-width:500px){
+                margin: 14px 0px 0px 38px;
+            }
+        }
         .how-block__img{
             width: 57% ;
             margin: -50px 0px 0px 0px;
+            @media screen and (max-width:1000px){
+                margin: 0px auto;
+                width: 75%;
+            }
+            @media screen and (max-width:500px){
+                margin: 20px auto 0px;
+                width: 100%;
+            }
         }
     }
     .how-block__trird{
         .info-how__top{
             margin-top: 38px;
+            @media screen and (max-width:1400px){
+                margin-top: 30px;
+            }
+            @media screen and (max-width:500px){
+                margin-top: 16px;
+            }
         }
         .how-block__img{
             margin-top: -75px;
             width: 34%;
-            margin-bottom: -35px;
+            margin-bottom: -55px;
+            @media screen and (max-width:1260px){
+                width: 43%;
+            }
+            @media screen and (max-width:1000px){
+                margin: 0 auto;
+                width: 60%;
+                margin-bottom: -70px;
+            }
+            @media screen and (max-width:500px){
+                width: 87%;
+                margin-bottom: -40px;
+            }
         }
     }
     .how-block {
         background: #E6EBEF;
         border-radius: 48px;
-        padding: 35px 96px 0px;  
+        padding: 35px 96px 10px;  
         display: flex;
         justify-content: space-between;
         margin-bottom: 65px;
+        @media screen and (max-width:1260px){
+            padding: 20px 40px 0px;
+        }
+        @media screen and (max-width:1000px){
+            flex-direction: column;
+        }
+        @media screen and (max-width:500px){
+            border-radius: 23px;
+            padding: 7px 26px 0px;
+            margin-bottom: 30px;
+        }
             // .how-block__info
     
             &__info {
@@ -45,6 +111,14 @@
     .how-block__img{
         width: 33%;
         margin-right: 46px;
+        @media screen and (max-width:1000px){
+            width: 70%;
+            margin: 30px auto 0px;
+        }
+        @media screen and (max-width:500px){
+            margin: 25px auto 0px;
+            width: 100%;
+        }
         img{
             width: 100%;
             object-fit: cover;
@@ -52,6 +126,9 @@
     }
     .info-how {
             width: 45%;
+            @media screen and (max-width:1000px){
+                width: 100%;
+            }
             // .info-how__addition
 
             &__addition{
@@ -60,6 +137,11 @@
                 line-height: 32px;
                 color: #627D98;
                 margin: 20px 0px 0px 46px;
+                @media screen and (max-width:500px){
+                    font-size: 16px;
+                    line-height: 25px;
+                    margin: 14px 0px 0px 32px;
+                }
             }
             // .info-how__top
     
@@ -67,12 +149,22 @@
                 display: flex;
                 align-items: flex-start;
                 margin-top: 55px;
+                @media screen and (max-width:1400px){
+                    margin-top: 30px;
+                }
+                @media screen and (max-width:1260px){
+                    margin-top: 20px;
+                }
                 p{
                     font-weight: 900;
                     font-size: 40px;
                     line-height: 52px;
                     color: #243B53;
                     margin-right: 15px;
+                    @media screen and (max-width:500px){
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
                 }
                 h4{
                     margin-top: 5px;
@@ -80,6 +172,10 @@
                     font-size: 32px;
                     line-height: 42px;
                     color: #627D98;
+                    @media screen and (max-width:500px){
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
                 }
             }
             

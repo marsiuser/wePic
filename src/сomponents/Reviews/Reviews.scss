@@ -1,7 +1,14 @@
 .reviews{
     padding-top: 60px;
+    @media screen and (max-width:500px){
+        padding-top: 38px;
+    }
     .caption {
         margin-bottom: 40px;
+        @media screen and (max-width:500px){
+            text-align: center;
+            margin-bottom: 30px;
+        }
     }
     .reviews-wrap {
         margin-top: 40px;
@@ -18,11 +25,28 @@
     .owl-carousel {
         width: 87%;
         margin-left: auto;
+        @media screen and (max-width:1400px){
+            width: 92%;
+        }
+        @media screen and (max-width:500px){
+            width: 96%;
+        }
     }
     .owl-dots{ 
         position: absolute;
         top: -80px;
         right: 300px;
+        @media screen and (max-width:1260px){
+            top: unset;
+            bottom: -60px;
+            right: unset;
+            left: 120px;
+        }
+        @media screen and (max-width:500px){
+            bottom: -36px;
+            right: unset;
+            left: 144px;
+        }
     }
     .owl-stage{
         padding-right: 280px !important;
@@ -44,6 +68,11 @@
         height: 34px;
         color:transparent !important;
         background-color: unset;
+        @media screen and (max-width:500px){
+            background-image: url("./img/right-mob.svg");
+            width: 126px;
+            height: 26px;
+        }
     }
     
     .owl-theme .owl-nav {
@@ -54,6 +83,22 @@
         position: absolute;
         top: -105px;
         right: 180px;
+        @media screen and (max-width:1260px){
+            top: unset;
+            bottom: -70px;
+            right: unset;
+            left: 0px;
+        }
+        @media screen and (max-width:500px){
+            top: unset;
+            bottom: -46px;
+            right: unset;
+            left: -6px;
+            width: 357px;
+        }
+        @media screen and (max-width:370px){
+            display: none;
+        }
     }
 
     .owl-carousel .owl-nav .owl-prev{
@@ -63,6 +108,11 @@
         height: 34px;
         color:transparent !important;
         background-color: unset;
+        @media screen and (max-width:500px){
+            background-image: url("./img/left-mob.svg");
+            width: 126px;
+            height: 26px;
+        }
     }
     .reviews-block {
         border-radius: 24px;
@@ -70,14 +120,32 @@
         display: flex;
         justify-content: space-between;
         width:auto;
+        @media screen and (max-width:1260px){
+            flex-direction: column-reverse;
+        }
+        @media screen and (max-width:500px){
+            padding: 32px 24px 10px;
+        }
             // .reviews-block__photo
     
             &__photo {
                 width: 40%;
                 margin-bottom: -35px;
+                @media screen and (max-width:1400px){
+                    width: 43%;
+                }
+                @media screen and (max-width:1260px){
+                    width: 60%;
+                }
+                @media screen and (max-width:500px){
+                    width: 55%;
+                }
                 img{
                     object-fit: cover;
                     width: 100%;
+                    @media screen and (max-width:500px){
+                        border-radius:24px;
+                    }
                 }
             }
     
@@ -86,18 +154,34 @@
             &__comment {
                 width: 52%;
                 margin-top: 20px;
+                padding-bottom: 15px;
+                @media screen and (max-width:1260px){
+                    width: 100%;
+                }
+                @media screen and (max-width:500px){
+                    margin-top: 0px;
+                }
                 p{
                     font-weight: 500;
                     font-size: 24px;
                     line-height: 32px;
                     color: #FFFFFF;
                     margin-bottom: 35px;
+                    @media screen and (max-width:500px){
+                        font-size: 20px;
+                        line-height: 32px;
+                        margin-bottom: 16px;
+                    }
                 }
                 span{
                     font-weight: bold;
                     font-size: 24px;
                     line-height: 32px;
                     color: #FFFFFF;
+                    @media screen and (max-width:500px){
+                        font-size: 20px;
+                        line-height: 32px;
+                    }
                 }
             }
     }    

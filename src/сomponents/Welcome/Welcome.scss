@@ -2,11 +2,22 @@
     .welcome-wrap {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width:1000px){
+            flex-direction: column;
+        }
     }
+    
     .welcome-info {
             width: 48%;
             text-align: left;
             margin-top: 110px;
+            @media screen and (max-width:1000px){
+               width: 100%;
+               text-align: center;
+            }
+            @media screen and (max-width:500px){
+                margin-top: 22px;
+            }
             // .welcome-info__caption
     
             &__caption {
@@ -15,6 +26,11 @@
                 line-height: 72px;
                 color: #243B53;
                 margin-bottom: 20px;
+                @media screen and (max-width:500px){
+                    font-size: 40px;
+                    line-height: 52px;
+                    margin-bottom: 17px;
+                }
                 p{
                     color: #ED5A5A;
                 }
@@ -28,6 +44,11 @@
                 line-height: 32px;
                 color: #627D98;
                 margin-bottom: 50px;
+                @media screen and (max-width:500px){
+                    font-size: 16px;
+                    line-height: 25px;
+                    margin-bottom: 32px;
+                }
                 b{
                     font-weight: 700;
                     color: #243B53;
@@ -54,11 +75,37 @@
                     background:#d44040;
                     transition: all 0.3s;
                 }
+                @media screen and (max-width:1000px){
+                    display: inline-flex;
+                }
+                @media screen and (max-width:500px){
+                    width: 100%;
+                }
             }
     }
     .welcome-photo {
         width:42%;
         margin: 25px 0px 0px 0px;
+        position: relative;
+        @media screen and (max-width:1000px){
+            width: 60%;
+            margin: 25px auto 0px;
+         }
+         @media screen and (max-width:500px){
+            width: 84%;
+            transform: rotate(-8deg);
+            margin: 10px auto 0px;
+         }
+         .welcome-gradient{
+             position: absolute;
+             bottom: -5px;
+             left: 0px;
+            @media screen and (max-width:1000px){
+                width: 100%;
+                height: 143px;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+            }
+         }
         img{
             width: 100%;
             object-fit: cover;

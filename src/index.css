@@ -16,3 +16,18 @@ body {
   line-height: 52px;
   color: #243B53;
 }
+
+@media screen and (max-width:1400px){
+  .container{
+    max-width: 85%;
+  }
+}
+@media screen and (max-width:500px){
+  .container{
+    max-width: 92%;
+  }
+  .caption{
+      font-size: 24px;
+      line-height: 32px;
+  }
+}

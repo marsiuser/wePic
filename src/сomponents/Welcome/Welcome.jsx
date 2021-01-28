@@ -14,6 +14,7 @@ export default class Welcome extends Component{
                         </div>
                         <div className="welcome-photo">
                             <img src={phone} alt="Welcome to WePic."/>
+                            <div className="welcome-gradient"></div>
                         </div>
                     </div>
                 </div>

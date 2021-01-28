@@ -13,8 +13,23 @@ export default class Reviews extends Component{
             stagePadding:280,
             margin: 30,
             nav:true,
-            autoplay: true,
-            loop:true
+            // autoplay: true,
+            loop:true,
+            responsive : {
+                0 : {
+                    stagePadding: 8
+                },
+                500 : {
+                    stagePadding: 60
+                },
+                768 : {
+                    stagePadding: 140
+                },
+                1100 : {
+                    stagePadding: 280
+                }
+            }
+            
         };
         return(
           <div className="reviews">

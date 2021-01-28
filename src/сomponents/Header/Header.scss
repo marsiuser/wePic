@@ -3,6 +3,9 @@
         display: flex;
         justify-content: space-between;
         padding: 15px 0px;
+        @media screen and (max-width:500px){
+            padding: 20px 0px;
+        }
         .header-logo {
 
             // .header-logo__text
@@ -13,10 +16,17 @@
                     line-height: 31px;
                     color: #ED5A5A;
                     text-decoration: none;
+                    @media screen and (max-width:500px){
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
                 }
         }
         .header-exit {
                 margin-top: 10px;
+                @media screen and (max-width:500px){
+                    margin-top: 4px;
+                }
                 a{
                     text-decoration: none;
                     outline: none;
@@ -28,6 +38,10 @@
                     font-size: 16px;
                     line-height: 32px;
                     color: #627D98;
+                    @media screen and (max-width:500px){
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
                     &:hover{
                         color: #485766;
                         transition: 0.3s;
@@ -45,6 +59,12 @@
                     border-radius: 100px;
                     padding: 14px 41px;
                     margin-left: 36px;
+                    @media screen and (max-width:500px){
+                        font-size: 14px;
+                        line-height: 17px;
+                        padding: 10px 24px;
+                        margin-left: 16px;
+                    }
                     &:hover{
                         background:#d44040;
                         transition: all 0.3s;
@@ -52,5 +72,110 @@
                 }
         }
         
+    }
+}
+
+// popup
+
+.popup-overlay {
+    background: rgba(36, 59, 83, 0.72) !important;
+}
+.popup-arrow{
+    display: none;
+}
+.popup-content{
+    position: absolute;
+    z-index: 999;
+    pointer-events: auto;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    max-width: 431px !important;
+    width: 100% !important;
+    border-radius: 24px !important;
+    @media screen and (max-width:500px){
+        max-width: unset !important;
+        width: 90% !important;
+    }
+}
+.popup-new{
+    padding: 40px 55px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    @media screen and (max-width:500px){
+        padding: 40px 24px 10px;
+    }
+    .popup-close{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: none;
+        background:#fff;
+    }
+    h4{
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 42px;
+        color: #243B53;
+        margin-bottom: 40px;
+        @media screen and (max-width:500px){
+            font-size: 24px;
+            line-height: 32px;
+            max-width: 300px;
+            margin: 0 auto 40px;
+        }
+        span{
+            color: #ED5A5A;
+        }
+    }
+    a{
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: 33px;
+        padding: 13px 45px 13px 10px;
+        text-decoration: none;
+        outline: none;
+        @media screen and (max-width:500px){
+            padding: 10px 25px 10px 10px;
+            position: relative;
+        }
+        span{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+            @media screen and (max-width:500px){
+                position: absolute;
+                top: 50%;
+                left: 54%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+        }
+    }
+    &__follow{
+    }
+    &__insta{
+        background: #E1306C;
+        &:hover{
+            background: #fc4783;
+            transition: 0.3s;
+        }
+    }
+    &__facebook{
+        background: #227BEF;
+        &:hover{
+            background: #4797ff;
+            transition: 0.3s;
+        }
+    }
+    &__mail{
+        background: #ED5A5A;
+        &:hover{
+            background: #fd7373;
+            transition: 0.3s;
+        }
     }
 }
